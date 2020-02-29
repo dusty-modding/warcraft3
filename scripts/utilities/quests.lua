@@ -8,7 +8,7 @@ function buildQuestReq (qst, requirements, desc)
     newDesc = newDesc ..r ..'|n'
   end
 
-  newDesc = newDesc ..'|n' ..'|n' ..desc
+  newDesc = newDesc ..'|n|n' ..desc
 
   QuestSetDescription(qst, newDesc)
 
@@ -31,6 +31,3 @@ function questCreator (name, desc, icon, isReq)
 
   return qst
 end
-
-
-questCreator('Hey Listen!', 'Hello there brave sir! Will you take a moment to listen to my tail?', 'ReplaceableTextures\\CommandButtons\\BTNChaplain.blp', true)
